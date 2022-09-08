@@ -1,17 +1,9 @@
 
 
-var script = document.createElement('script');
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
-
-document.head.appendChild(script); //or something of the likes
-
-
-
 let query = ""
 let type = ""
 let theme = ""
 function setContent(x){
-    output = document.body.innerHTML
     input = x  
   decode(input) 
 
@@ -138,8 +130,8 @@ background-position: center; /* Center the image */
        </div>
   </div>
   <div class="text-container" id="card_text">
-    <p id="head">Happy Birthday அத்தான்!</p>
-  ${value}
+    <p id="head">Happy whatever {name}!</p>
+ <p> ${value}</>
   </div>
 </div>
 
@@ -164,6 +156,16 @@ var name = url.searchParams.get("name");
 document.body.innerHTML = "Nothing found here! :("
        
      }else{
+
+
+
+var script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
+
+document.head.appendChild(script); //or something of the likes
+
+	     
+	     
 setContent(c)
       
   
