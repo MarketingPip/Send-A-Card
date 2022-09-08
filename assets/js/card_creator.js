@@ -2,10 +2,10 @@
 
 
 function encode(){
-  var res = LZString.compressToBase64($('#input').val());
-  var phone = LZString.compressToBase64($('#phone').val());
+  var res = encodeURIComponent(LZString.compressToBase64($('#input').val()));
+  var phone = encodeURIComponent(LZString.compressToBase64($('#phone').val()));
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
-  res = encodeURIComponent(whatsappApiUrl + res);
+  res = whatsappApiUrl + res + '&name=' + phone;
   $('#output').text(res);
   $('#invia').attr('href', res);
 }
