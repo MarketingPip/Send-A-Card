@@ -162,7 +162,7 @@ window.onload=function(){
      var url_string = window.location.href
       var url = new URL(url_string);
 var c = url.searchParams.get("text");  
-
+console.log(c)
 var name = url.searchParams.get("name");  
 
   
@@ -173,10 +173,6 @@ document.body.innerHTML = "Nothing found here! :("
 
 
 
-var script = document.createElement('script');
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
-
-document.head.appendChild(script); //or something of the likes
 
 	     
 	     
