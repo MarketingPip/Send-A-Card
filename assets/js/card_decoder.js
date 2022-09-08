@@ -108,6 +108,20 @@ background-position: center; /* Center the image */
 	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.card:before{
+  border: solid;
+  border-color: white transparent;
+  content: "HOVER THE CARD!";
+  left: 80px;
+  top: -60px;
+  position: absolute;
+  color:white;
+}
+.card:hover:before {
+   content: "";
+    border: none;
+}
+
 .imgset
 {
   position: relative;
