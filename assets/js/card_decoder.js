@@ -182,7 +182,7 @@ document.body.innerHTML = "Nothing found here! :("
 
 	     
 	     
-setContent(c, name, photo)
+setContent(filterXSS(c), filterXSS(name), filterXSS(photo))
       
   
        
