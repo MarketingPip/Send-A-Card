@@ -59,6 +59,8 @@ background-position: center; /* Center the image */
 	 margin: 60px auto 60px auto;
 }
  .card p {
+ word-break: break-all;
+
 	 font-size: 1.1em;
 	 line-height: 1.4;
 	 font-family: 'Nobile';
@@ -154,7 +156,6 @@ background-position: center; /* Center the image */
 </body>`;
 }
 }
-
 
 
 if (window.location.href.indexOf("card?") != -1) {
