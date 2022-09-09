@@ -25,7 +25,7 @@ function encode(){
   }
 
   $('#output').text(res);
-  $('#invia').attr('href', res);
+  $('#invia').attr('href', res + "&preview");
 }
 
 
