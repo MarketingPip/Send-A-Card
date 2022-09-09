@@ -244,5 +244,27 @@ C/O https://placeholder.com/"></div></li></ul>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
 
 <script src="assets/js/card_creator.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.min.js"></script>
+
+
+  <script type="text/javascript">
+    
+    
+    var picker =   jQuery("select").imagepicker({
+      hide_select:  false,
+    });
+
+
+function addPhoto(){
+
+  
+  $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
+  $('#invia').attr('href', res);
+}
+
+
+  </script>
+  
 
 </body></html>
