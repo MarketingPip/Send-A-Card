@@ -4,11 +4,9 @@
 
 
 
-
 function encode(){
-var e = $("#input").val(),
-    fix = e.replace(/\s/g, "\n");
-    var res = encodeURIComponent(LZString.compressToBase64(fix));
+  console.log(picker.val())
+    var res = encodeURIComponent(LZString.compressToBase64($('#input').val()));
   var phone = encodeURIComponent(LZString.compressToBase64($('#phone').val()));
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
   if (picker.val() == ""){
@@ -20,7 +18,6 @@ var e = $("#input").val(),
   $('#output').text(res);
   $('#invia').attr('href', res);
 }
-
 
 
 // Encode on load.
@@ -69,5 +66,3 @@ $(document).ready(function() {
         $chars.html(textRemaining + ' characters remaining');
     };
 });
-
-
