@@ -48,3 +48,23 @@ $(document).ready(function() {
         $chars.html(textRemaining + ' characters remaining');
     };
 });
+
+
+// Max text counter for message area
+$(document).ready(function() {
+    var $txtArea = $('#phone');
+    var $chars   = $('#name_chars');
+    var textMax = $txtArea.attr('maxlength');
+  
+    $chars.html(textMax + ' characters remaining');
+
+    $txtArea.on('keyup', countChar2);
+    
+    function countChar2() {
+        var textLength = $txtArea.val().length;
+        var textRemaining = textMax - textLength;
+        $chars.html(textRemaining + ' characters remaining');
+    };
+});
+
+
