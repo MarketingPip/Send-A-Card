@@ -59,8 +59,6 @@ background-position: center; /* Center the image */
 	 margin: 60px auto 60px auto;
 }
  .card p {
- word-break: break-all;
-
 	 font-size: 1.1em;
 	 font-family: 'Nobile';
 	 color: #331717;
