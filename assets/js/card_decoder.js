@@ -176,11 +176,6 @@ var name = url.searchParams.get("name");
 	
 var photo = url.searchParams.get("photo");  	
 
-if (photo === null){
-photo = "BYFxAcGcC4HpYE4FMB2ATJCB0AzAlikgIYIhEC2meAxkVtQPbmx7lEDmSkiqGyasDDiIBXADYhY7ZEhAF2AWloIBrDl1gkQAdwYIA1ms7dKaPCOYBmWJHJ4xSAJ4Lh1JAqLU5AN3da8kCAKIAhEKJDgJKggWOAo7AD8AGRkCJwgAB4AvAAMKSTpjlkArHlGSNp4aCDAJTllbJzASHjsoCUAnB1J5AwYYpXVtaV5vf3Nre0A7PVJAEae+tIMIuiMYnpZODjU1LN6eNFEcgwoWQCMQA==="
-	
-}
-	
   
      if (c === null){
 document.body.innerHTML = "Nothing found here! :("
