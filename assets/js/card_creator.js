@@ -11,13 +11,6 @@ function encode(){
 }
 
 
-function addPhoto(){
-
-  
-  $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64($('select').imagepicker().val())));
-  $('#invia').attr('href', res);
-}
-
 
 // Encode on load.
 encode();
