@@ -1,2 +1,3 @@
 # Send-A-Card
-Send a special card to your friends or family! 
+Send a customized e-Card to your friends or family for free!
+
