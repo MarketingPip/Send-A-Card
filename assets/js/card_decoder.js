@@ -62,7 +62,6 @@ background-position: center; /* Center the image */
  word-break: break-all;
 
 	 font-size: 1.1em;
-	 line-height: 1.4;
 	 font-family: 'Nobile';
 	 color: #331717;
 	 font-style: italic;
