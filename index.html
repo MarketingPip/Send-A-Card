@@ -3,14 +3,15 @@
   <meta charset="UTF-8">
   <title>Send A Card</title>
 
-  <meta name="robots">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.min.js"></script></head>
-
-<body class="modal-open" style="padding-right: 56px;">
   
-<link href="assets/css/style.css" rel="stylesheet">
+  
 
-d
+
+
+<body>
+  
+
+
 <link href="https://btn.ninja/css/addons.css" rel="stylesheet">
 
 <link href="https://btn.ninja/css/bootstrap.css" rel="stylesheet">
@@ -172,12 +173,7 @@ ul.thumbnails.image_picker_selector {
     ul.thumbnails.image_picker_selector li .thumbnail.selected {
       background: #08C; }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
 <div class="cont">
   <h1>SendACard - Card Creator</h1>
 <div class="float-half">
@@ -189,7 +185,7 @@ ul.thumbnails.image_picker_selector {
   
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imagePicker" style="width:200px; margin:5px auto;">Choose Card Image</button>
 
-<div class="modal in" id="imagePicker" style="display: block; padding-right: 16px;">
+<div class="modal" id="imagePicker">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -214,7 +210,7 @@ C/O https://placeholder.com/"></option>
 
 C/O https://placeholder.com/"></div></li><li><div class="thumbnail"><img class="image_picker_image" src="https://via.placeholder.com/150
 
-C/O https://placeholder.com/"></div></li><li><div class="thumbnail selected"><img class="image_picker_image" src="https://via.placeholder.com/150
+C/O https://placeholder.com/"></div></li><li><div class="thumbnail"><img class="image_picker_image" src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/"></div></li></ul>
         </div>
@@ -232,17 +228,21 @@ C/O https://placeholder.com/"></div></li></ul>
 <p class="label">Sending To</p>
   <input type="phone" id="phone" placeholder="John Doe">
 <p class="label">Link to copy:</p>
-<textarea id="output">https://marketingpip.github.io/Send-A-Card/card?text=https://marketingpip.github.io/Send-A-Card/card?text=JoewrgTgBAtgpgZwQQwOZygCzhOAoIA%3D&amp;name=Q%3D%3D%3D&amp;name=Q%3D%3D%3D&amp;photo=MxA%3D</textarea>
+<textarea id="output">https://marketingpip.github.io/Send-A-Card/card?text=JoewrgTgBAtgpgZwQQwOZygCzhOAoIA%3D&amp;name=Q%3D%3D%3D</textarea>
 </div>
-<a href="https://marketingpip.github.io/Send-A-Card/card?text=https://marketingpip.github.io/Send-A-Card/card?text=JoewrgTgBAtgpgZwQQwOZygCzhOAoIA%3D&amp;name=Q%3D%3D%3D&amp;name=Q%3D%3D%3D&amp;photo=MxA%3D" id="invia" target="_blank" title="Condividi su WhatsApp" class="button button--simple button--primary">Preview</a>
+<a href="https://marketingpip.github.io/Send-A-Card/card?text=JoewrgTgBAtgpgZwQQwOZygCzhOAoIA%3D&amp;name=Q%3D%3D%3D" id="invia" target="_blank" title="Condividi su WhatsApp" class="button button--simple button--primary">Preview</a>
  
   <a href="#" target="_blank" class="cosmo"><p>🚀</p></a>
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
 
-
-<div class="modal-backdrop in"></div></body></html>
+<script src="assets/js/card_creator.js"></script>
+</body></html>
