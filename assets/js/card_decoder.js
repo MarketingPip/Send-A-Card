@@ -143,7 +143,7 @@ background-position: center; /* Center the image */
        </div>
   </div>
   <div class="text-container" id="card_text">
-    <p id="head">${value2}!</p>
+    <p id="head">${value2}</p>
  <p> ${value}</>
   </div>
 </div>
