@@ -163,7 +163,7 @@ background-position: center; /* Center the image */
 }
 }
 
- if (window.location.pathname.match(/^card$/)){
+ if (window.location.pathname.match(/^\/Send-A-Card\/card$/)){
 		 window.location.href =  `https://${window.location.hostname}/404.html`
 } 
 	
