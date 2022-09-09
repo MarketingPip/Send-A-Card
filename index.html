@@ -1,7 +1,15 @@
+
+
+
+
+<link href="https://btn.ninja/css/addons.css" rel="stylesheet">
+
+<link href="https://btn.ninja/css/bootstrap.css" rel="stylesheet">
+
 <link href="assets/css/style.css" rel="stylesheet">
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -15,6 +23,43 @@ Your message here
 </textarea>
 </div>
 <div class="float-half">
+  
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imagePicker" style="width:200px; margin:5px auto;">Choose Card Image</button>
+
+<div class="modal" id="imagePicker">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="wall">
+          
+          <select name="user[avatar]" id="images">
+  <option value="">Please Select</option>
+  <option value="1" data-img-src='https://via.placeholder.com/150
+
+C/O https://placeholder.com/'></option>
+  <option value="2" data-img-src='https://via.placeholder.com/150
+
+C/O https://placeholder.com/'></option>
+  <option value="3" data-img-src='https://via.placeholder.com/150
+
+C/O https://placeholder.com/'></option>
+</select>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addPhoto();">Add Images</button>
+        <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
 <p class="label">Sending To</p>
   <input type="phone" id="phone" placeholder="John Doe">
 <p class="label">Link to copy:</p>
@@ -25,4 +70,5 @@ Your message here
   <a href="#" target="_blank"  class="cosmo"><p>🚀</p></a>
 </div>
 
-<script src="assets/js/card_creator.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
