@@ -41,7 +41,7 @@ $(document).ready(function() {
     $chars.html(textMax + ' characters remaining');
 
     $txtArea.on('keyup', countChar);
-    
+    countChar()
     function countChar() {
         var textLength = $txtArea.val().length;
         var textRemaining = textMax - textLength;
@@ -59,7 +59,7 @@ $(document).ready(function() {
     $chars.html(textMax + ' characters remaining');
 
     $txtArea.on('keyup', countChar2);
-    
+    countChar2()
     function countChar2() {
         var textLength = $txtArea.val().length;
         var textRemaining = textMax - textLength;
