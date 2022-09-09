@@ -158,7 +158,7 @@ background-position: center; /* Center the image */
  
  <body>
 <div class="card">
-<a class="mobile" href="Send-A-Card/"></a>
+<a class="link" href="Send-A-Card/"></a>
   <div class="back"></div>
   <div class="front">
     <div class="imgset">
