@@ -179,10 +179,16 @@ document.body.innerHTML = "Nothing found here! :("
 
 
 
+var script = document.createElement('script');
+script.onload = function () {
 
-	     
-	     
-setContent(filterXSS(c), filterXSS(name), filterXSS(photo))
+	setContent(filterXSS(c), filterXSS(name), filterXSS(photo))
+};
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js";
+
+document.head.appendChild(script); //or something of the likes
+	 
+
       
   
        
