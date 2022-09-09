@@ -4,9 +4,11 @@
 
 
 
+
 function encode(){
-  console.log(picker.val())
-    var res = encodeURIComponent(LZString.compressToBase64($('#input').val()));
+var e = $("#input").val(),
+    fix = e.replace(/\s/g, "\n");
+    var res = encodeURIComponent(LZString.compressToBase64(fix));
   var phone = encodeURIComponent(LZString.compressToBase64($('#phone').val()));
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
   if (picker.val() == ""){
@@ -18,6 +20,7 @@ function encode(){
   $('#output').text(res);
   $('#invia').attr('href', res);
 }
+
 
 
 // Encode on load.
