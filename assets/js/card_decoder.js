@@ -163,9 +163,6 @@ background-position: center; /* Center the image */
 }
 }
 
- if (window.location.pathname.match(/^\/Send-A-Card\/card$/)){
-		 window.location.href =  `https://${window.location.hostname}/404.html`
-} 
 	
 
 if (window.location.href.indexOf("card?") != -1) {
@@ -208,4 +205,8 @@ document.head.appendChild(script); //or something of the likes
      }
 
 
-}} 
+}} else {
+	
+	
+window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.html`	
+}
