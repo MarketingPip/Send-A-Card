@@ -257,8 +257,8 @@ C/O https://placeholder.com/"></div></li></ul>
 
   <script type="text/javascript">
     
-    
-  var picker = $("select").imagepicker()
+    var picker =   jQuery("select").imagepicker({
+    });
 
 function addPhoto(){
  var res = encodeURIComponent(LZString.compressToBase64($('#input').val()));
