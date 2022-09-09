@@ -1,13 +1,166 @@
 
 
-
-
 <link href="https://btn.ninja/css/addons.css" rel="stylesheet">
 
 <link href="https://btn.ninja/css/bootstrap.css" rel="stylesheet">
+<style>
+  body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color:#1ebea5;
+  padding:2rem;
+}
+.cont {
+  text-align:center;
+  padding:2rem;
+  background-color:#f8f9fa;
+}
+p.label {
+  text-align:left;
+  font-size:20px;
+}
+.float-half {
+  width: calc(50% - 2.2rem);
+  margin:1rem;
+  display:inline-block;
+}
+input, textarea {
+  background-color:#EDF8F5;
+  border: solid 1px #1ebea5;
+  box-shadow:unset;
+  border-radius:5px;
+  padding:10px;
+}
+#input {
+  width:100%;
+  min-height:300px;
+  font-size:18px;
+}
+#output {
+  width:100%;
+  min-height:194px;
+  font-size:18px;
+}
+#phone {
+  width:100%;
+  font-size:18px;
+}
 
-<link href="assets/css/style.css" rel="stylesheet">
+.button--simple {
+    border-radius: 5px;
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 19px;
+    height: 19px;
+    box-sizing: content-box;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-block;
+  margin-top:20px;
+}
+.button--primary {
+    background-color: #01E675;
+    color: #fff !important;
+  text-decoration:none;
+}
 
+@media print, screen and (max-width: 1200px) {
+.float-half {
+  width: calc(100% - 2.2rem);
+  margin:1rem;
+  display:inline-block;
+}
+}
+
+
+.cosmo {
+  color: #000;
+  text-decoration:none;
+  font-size:32px;
+}
+
+.brick { width:100px; height:100px; background:#f2f2f2;}
+.tile-picker  {
+  position:relative;
+  cursor:pointer; 
+  background-color:#eaeaea; 
+  background-position: center center;
+  background-size: cover;
+  box-shadow:inset 0 0 10px rgba(0,0,0,.1); 
+  outline: 2px solid #fff;
+  outline-offset: -3px;
+  border:1px solid #bbb;  }
+
+.active.tile-picker { border-color: #aaa; }
+
+.tile-picker input[type=checkbox] {
+  opacity:0;
+  position:absolute; 
+  left:-80px;  }
+
+.tile-checked {
+  display:block; 
+  font-style:normal;  
+  width:20px; height:20px; 
+  position:absolute; 
+  top:-2px;
+  right:-4px;
+}
+
+.tile-checked:after {
+  content:'\2713';
+  display:block;
+  line-height:18px; width:18px; height:18px;
+  
+  background-color:#1481b8; color:#fff;
+  border-radius:2px;
+  font-size:13px;
+  text-align:center; font-weight:bold;
+   
+  opacity:0;
+  transition: opacity .34s ease-in-out; }
+
+
+input[type=checkbox]:checked ~ .tile-checked:after {
+  opacity:1; }
+
+/* line 6, source/sass/image-picker.scss */
+ul.thumbnails.image_picker_selector {
+  overflow: auto;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px; }
+  /* line 15, source/sass/image-picker.scss */
+  ul.thumbnails.image_picker_selector ul {
+    overflow: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+  /* line 25, source/sass/image-picker.scss */
+  ul.thumbnails.image_picker_selector li.group_title {
+    float: none; }
+  /* line 30, source/sass/image-picker.scss */
+  ul.thumbnails.image_picker_selector li {
+    margin: 0px 12px 12px 0px;
+    float: left; }
+    /* line 35, source/sass/image-picker.scss */
+    ul.thumbnails.image_picker_selector li .thumbnail {
+      padding: 6px;
+      border: 1px solid #DDD;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none; }
+      /* line 42, source/sass/image-picker.scss */
+      ul.thumbnails.image_picker_selector li .thumbnail img {
+        -webkit-user-drag: none; }
+    /* line 48, source/sass/image-picker.scss */
+    ul.thumbnails.image_picker_selector li .thumbnail.selected {
+      background: #08C; }
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
 
 
