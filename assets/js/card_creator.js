@@ -1,19 +1,11 @@
 
-var script = document.createElement('script');
-script.onload = function () {
-    //do stuff with the script
-  
-  var picker = $("select").imagepicker()
-};
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.min.js";
-
-document.head.appendChild(script); //or something of the likes
-
+ var picker = $("select")
 
 
 
 
 function encode(){
+  console.log(picker.val())
     var res = encodeURIComponent(LZString.compressToBase64($('#input').val()));
   var phone = encodeURIComponent(LZString.compressToBase64($('#phone').val()));
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
