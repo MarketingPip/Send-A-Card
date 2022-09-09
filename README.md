@@ -46,4 +46,4 @@ participate in this project.
 
 This project is licensed under the MIT License - see the
 [LICENSE.md](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/LICENSE) file for
-details.
+details. 
