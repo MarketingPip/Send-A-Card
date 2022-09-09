@@ -140,12 +140,12 @@ background-position: center; /* Center the image */
   <div class="back"></div>
   <div class="front">
     <div class="imgset">
-         <img width="100%" src="${value3}">
+         <img width="100%" src="${filterXSS(value3)}">
        </div>
   </div>
   <div class="text-container" id="card_text">
-    <p id="head">${value2}</p>
- <p> ${value}</>
+    <p id="head">${filterXSS(value2)}</p>
+ <p> ${filterXSS(value)}</>
   </div>
 </div>
 
@@ -182,7 +182,7 @@ document.body.innerHTML = "Nothing found here! :("
 var script = document.createElement('script');
 script.onload = function () {
 
-	setContent(filterXSS(c), filterXSS(name), filterXSS(photo))
+	setContent(c, name, photo)
 };
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js";
 
