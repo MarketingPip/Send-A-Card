@@ -167,7 +167,7 @@ var name = url.searchParams.get("name");
 	
 var photo = url.searchParams.get("photo");  	
 
-if (photo == null){
+if (!photo){
 photo = "https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/smiley-face-active-artist-transparent.png?&targetx=0&targety=50&imagewidth=500&imageheight=599&modelwidth=500&modelheight=700&backgroundcolor=ffcc00&orientation=1"
 	
 }
