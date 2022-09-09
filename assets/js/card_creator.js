@@ -30,3 +30,21 @@ $('#phone').on('keyup', function(){
   encode();
 });
 
+
+
+// Max text counter for message area
+$(document).ready(function() {
+    var $txtArea = $('#input');
+    var $chars   = $('#chars');
+    var textMax = $txtArea.attr('maxlength');
+  
+    $chars.html(textMax + ' characters remaining');
+
+    $txtArea.on('keyup', countChar);
+    
+    function countChar() {
+        var textLength = $txtArea.val().length;
+        var textRemaining = textMax - textLength;
+        $chars.html(textRemaining + ' characters remaining');
+    };
+});
