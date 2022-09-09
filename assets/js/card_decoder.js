@@ -12,21 +12,21 @@ If you are using this for commerical purposes, a sponsorship or donation would b
 let query = ""
 let type = ""
 let theme = ""
-function setContent(x, y, z){
-  decode(x, y, z) 
+function setContent(x, y, z, a, b){
+  decode(x, y, z, a) 
 
 
 
 
-  function decode(input, input2, input3) {
+  function decode(input, input2, input3, input4, input5) {
 // Takes a Base64-encoded, LZ-compressed string and converts to plaintext.
   var $str = LZString.decompressFromBase64(input)
    var $str2 = LZString.decompressFromBase64(input2)
       var $str3 = LZString.decompressFromBase64(input3)
-  display($str, $str2, $str3);
+  display($str, $str2, $str3, input4, input5);
 }
 
-function display(value, value2, value3)
+function display(value, value2, value3,  value4,  value5)
 {
   //Displays the output
  document.body.innerHTML = `
@@ -152,13 +152,13 @@ background-position: center; /* Center the image */
     position: absolute;
     color: white;
     /* content: "<a href='mailto:info@site.com'>info@site.com</a>"; */
-    content: "Click To Make Your Own eCard";
+    content: "${value4}";
 }
 </style>
  
  <body>
 <div class="card">
-<a class="link" href="/Send-A-Card/"></a>
+${value5}
   <div class="back"></div>
   <div class="front">
     <div class="imgset">
@@ -176,7 +176,12 @@ background-position: center; /* Center the image */
 }
 }
 
+function copyURL(){
+ navigator.clipboard.writeText(window.location.href);
+
+document.body.innerHTML = "Link has been saved to clipboard! Now share it via e-mail, text or etc..."
 	
+}
 
 if (window.location.href.indexOf("card?") != -1) {
 
@@ -187,7 +192,20 @@ var c = url.searchParams.get("text");
 console.log(c)
 var name = url.searchParams.get("name");  
 	
-var photo = url.searchParams.get("photo");  	
+var photo = url.searchParams.get("photo"); 
+	
+var preview = url.searchParams.get("preview"); 	
+	
+
+     if (preview === null){
+preview = "Click To Make Your Own eCard"
+	   var link = `<a class="link" href="/Send-A-Card/"></a>`
+       
+     }	else {
+	preview = "Click To Copy Link To Share"
+	     var link = `<a class="link" onclick="copyURL()"></a>`
+     }
+	
 
   
      if (c === null){
@@ -200,7 +218,7 @@ document.body.innerHTML = "Nothing found here! :("
 var script = document.createElement('script');
 script.onload = function () {
 
-	setContent(c, name, photo)
+	setContent(c, name, photo, preview, link)
 };
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js";
 
