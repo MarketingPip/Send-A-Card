@@ -12,8 +12,9 @@ function encode(){
 
 
 function addPhoto(){
-  res = whatsappApiUrl + res + '&name=' + phone + "&photo=" + encodeURIComponent(LZString.compressToBase64($('select').imagepicker().val()));
-  $('#output').text(res);
+
+  
+  $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64($('select').imagepicker().val())));
   $('#invia').attr('href', res);
 }
 
@@ -31,6 +32,8 @@ $('#phone').on('keyup', function(){
 
 var script = document.createElement('script');
 script.onload = function () {
+    //do stuff with the script
+  console.log("ds")
   $("select").imagepicker()
 };
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.min.js";
