@@ -30,27 +30,6 @@ function display(value, value2, value3)
 {
   //Displays the output
  document.body.innerHTML = `
- <head>
-   <link rel="icon" type="image/png" href="https://static.thenounproject.com/png/555763-200.png"/>
-  <meta charset="UTF-8">
-  <title>You recieved a eCard!</title>
-            <meta name="title" content="You Received A Card">
-          <meta name="description" content=>
-
-          <!-- Twitter -->
-          <meta property="twitter:title" content="You Received A Card">
-          <meta property="twitter:description" content="Open your eCard!">
-          <meta property="twitter:image" content="https://user-images.githubusercontent.com/86180097/189339406-4f46b275-5227-4974-b749-fa583e3f2ea9.png">
-          <meta property="twitter:url" content="https://marketingpipeline.github.io/Send-A-Card/">
-          <meta property="twitter:card" content="summary_large_image">
-
-          <!-- Facebook -->
-          <meta property="og:title" content="You Received A Card">
-          <meta property="og:description" content="Open your eCard!">
-                    <meta property="og:image" content="https://user-images.githubusercontent.com/86180097/189339406-4f46b275-5227-4974-b749-fa583e3f2ea9.png">
-          <meta property="og:url" content="https://marketingpipeline.github.io/Send-A-Card/">
-          <meta property="og:type" content="website">
- </head>
  <style>
  body
 {
