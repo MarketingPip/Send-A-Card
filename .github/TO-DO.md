@@ -7,7 +7,7 @@
    <summary> Click to read the current tasks for JS developers </summary>
    
    <br>
-
+- [ ] Add option to change the background gradients. (mostly front-end; needs a nice UI option)
 - [ ] Add option for adding photo on the inside (left side)
      - [ ] Allow via link
      - [ ] Allow via Upload Camera
