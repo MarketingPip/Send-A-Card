@@ -13,7 +13,7 @@ let query = ""
 let type = ""
 let theme = ""
 function setContent(x, y, z, a, b){
-  decode(x, y, z, a) 
+  decode(x, y, z, a, b) 
 
 
 
