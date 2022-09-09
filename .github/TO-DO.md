@@ -4,7 +4,7 @@
 
 ## Javascript Tasks <img height="20px" src="https://skillicons.dev/icons?i=js">
 <details>
-   <summary> Click to read the current tasks for JS developers </summary>
+   <summary> Click to read the current tasks for JS work needed </summary>
    
    <br>
    
@@ -31,11 +31,14 @@
 
 - [ ] Fix Responsiveness Issues (For Card)
 - [ ] Fix size issues for text area. (word-break etc) 
-
+- [ ] Improve UI & UX
+   
 
 <br><br> 
    
 </details>     
+
+
 
 
 
