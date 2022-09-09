@@ -9,11 +9,11 @@ function setContent(x, y, z){
 
 
 
-  function decode(input, input2) {
+  function decode(input, input2, input3) {
 // Takes a Base64-encoded, LZ-compressed string and converts to plaintext.
   var $str = LZString.decompressFromBase64(input)
    var $str2 = LZString.decompressFromBase64(input2)
-      var $str3 = LZString.decompressFromBase64(input2)
+      var $str3 = LZString.decompressFromBase64(input3)
   display($str, $str2, $str3);
 }
 
