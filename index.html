@@ -311,7 +311,7 @@ function addPhoto(){
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
    res = whatsappApiUrl + res + '&name=' + phone;
   $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
-  $('#invia').attr('href', res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
+  $('#invia').attr('href', res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val()))  + "&preview");
 }
 
 
