@@ -263,8 +263,8 @@ function addPhoto(){
   var phone = encodeURIComponent(LZString.compressToBase64($('#phone').val()));
   var whatsappApiUrl = 'https://marketingpip.github.io/Send-A-Card/card?text=';
    res = whatsappApiUrl + res + '&name=' + phone;
-  var final = $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
-  $('#invia').attr('href', final);
+  $('#output').text(res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
+  $('#invia').attr('href', res + "&photo=" + encodeURIComponent(LZString.compressToBase64(picker.val())));
 }
 
 
