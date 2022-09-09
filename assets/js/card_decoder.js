@@ -3,23 +3,22 @@
 let query = ""
 let type = ""
 let theme = ""
-function setContent(x){
-    input = x  
-  decode(input) 
+function setContent(x, y){
+  decode(x,y) 
 
 
 
 
-  function decode(input) {
+  function decode(input, input2) {
 // Takes a Base64-encoded, LZ-compressed string and converts to plaintext.
   var $str = LZString.decompressFromBase64(input)
-  display($str);
+   var $str2 = LZString.decompressFromBase64(input2)
+  display($str, $str2);
 }
 
-function display(value)
+function display(value, value2)
 {
-  //Displays the output, and copies it to the clipboard if the option is checked.
-  console.log(value)
+  //Displays the output
  document.body.innerHTML = `
  <style>
  body
@@ -144,7 +143,7 @@ background-position: center; /* Center the image */
        </div>
   </div>
   <div class="text-container" id="card_text">
-    <p id="head">Happy whatever {name}!</p>
+    <p id="head">${value2}!</p>
  <p> ${value}</>
   </div>
 </div>
@@ -176,7 +175,7 @@ document.body.innerHTML = "Nothing found here! :("
 
 	     
 	     
-setContent(c)
+setContent(c, name)
       
   
        
