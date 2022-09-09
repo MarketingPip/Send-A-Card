@@ -7,7 +7,7 @@
 
 
    <p align="center">
-      Send a customized e-Card to your friends or family for free
+      Send customized e-Cards to your friends or family for free
   
   <br>
   <small> <b><i>Show your support!</i> </b></small>
@@ -28,7 +28,7 @@
 
 This is a static based eCard generator. 
 
-You can view a demo of Send-A-Card hosted on GitHub Pages [here.](https://marketingpipeline.github.io/Markdown-Tag)
+You can view a demo of <b>Send A Card</b> hosted on GitHub Pages [here.](https://marketingpipeline.github.io/Markdown-Tag)
 
 ## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/Markdown-Tag)
 
