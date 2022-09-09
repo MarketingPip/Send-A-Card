@@ -128,10 +128,11 @@ background-position: center; /* Center the image */
   z-index: 1;
   margin-bottom: -215px;
 }
-.imgset img
-{
-    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+.imgset img {
+    height: 425px;
+    box-shadow: 0px 6px 11px 7px rgb(0 0 0 / 22%);
     border-radius: 5px;
+    width: 296px;
 }
 </style>
  
