@@ -3,8 +3,8 @@
 let query = ""
 let type = ""
 let theme = ""
-function setContent(x, y){
-  decode(x,y) 
+function setContent(x, y, z){
+  decode(x,y z) 
 
 
 
@@ -13,10 +13,11 @@ function setContent(x, y){
 // Takes a Base64-encoded, LZ-compressed string and converts to plaintext.
   var $str = LZString.decompressFromBase64(input)
    var $str2 = LZString.decompressFromBase64(input2)
-  display($str, $str2);
+      var $str3 = LZString.decompressFromBase64(input2)
+  display($str, $str2, $str3);
 }
 
-function display(value, value2)
+function display(value, value2, value3)
 {
   //Displays the output
  document.body.innerHTML = `
@@ -37,7 +38,7 @@ function display(value, value2)
 	 border: 10px solid #9612eb;
 	 margin: 60px auto 0 auto;
 	 box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.5));
 
 background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -139,7 +140,7 @@ background-position: center; /* Center the image */
   <div class="back"></div>
   <div class="front">
     <div class="imgset">
-         <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
+         <img width="100%" src="${value3}">
        </div>
   </div>
   <div class="text-container" id="card_text">
@@ -163,7 +164,14 @@ window.onload=function(){
 var c = url.searchParams.get("text");  
 console.log(c)
 var name = url.searchParams.get("name");  
+	
+var photo = url.searchParams.get("photo");  	
 
+if (photo == null){
+photo = "https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/smiley-face-active-artist-transparent.png?&targetx=0&targety=50&imagewidth=500&imageheight=599&modelwidth=500&modelheight=700&backgroundcolor=ffcc00&orientation=1"
+	
+}
+	
   
      if (c === null){
 document.body.innerHTML = "Nothing found here! :("
@@ -175,7 +183,7 @@ document.body.innerHTML = "Nothing found here! :("
 
 	     
 	     
-setContent(c, name)
+setContent(c, name, photo)
       
   
        
