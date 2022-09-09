@@ -1,5 +1,13 @@
+/*
 
- var picker = $("select")
+Originally Built by github.com/MarketingPipeline
+
+This work is licensed under MIT tho...
+
+This notice may NOT be removed or altered from any source distribution.
+
+*/
+var picker = $("select")
 
 
 
