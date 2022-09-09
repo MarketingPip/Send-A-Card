@@ -142,10 +142,23 @@ background-position: center; /* Center the image */
     border-radius: 5px;
     width: 296px;
 }
+
+.link:after {
+    border: solid;
+    border-color: white transparent;
+    content: "HOVER THE CARD!";
+    left: 52px;
+    top: 466px;
+    position: absolute;
+    color: white;
+    /* content: "<a href='mailto:info@site.com'>info@site.com</a>"; */
+    content: "Click To Make Your Own eCard";
+}
 </style>
  
  <body>
 <div class="card">
+<a class="mobile" href="Send-A-Card/"></a>
   <div class="back"></div>
   <div class="front">
     <div class="imgset">
