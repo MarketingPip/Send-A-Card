@@ -167,8 +167,8 @@ var name = url.searchParams.get("name");
 	
 var photo = url.searchParams.get("photo");  	
 
-if (!photo){
-photo = "https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/smiley-face-active-artist-transparent.png?&targetx=0&targety=50&imagewidth=500&imageheight=599&modelwidth=500&modelheight=700&backgroundcolor=ffcc00&orientation=1"
+if (photo === null){
+photo = "BYFxAcGcC4HpYE4FMB2ATJCB0AzAlikgIYIhEC2meAxkVtQPbmx7lEDmSkiqGyasDDiIBXADYhY7ZEhAF2AWloIBrDl1gkQAdwYIA1ms7dKaPCOYBmWJHJ4xSAJ4Lh1JAqLU5AN3da8kCAKIAhEKJDgJKggWOAo7AD8AGRkCJwgAB4AvAAMKSTpjlkArHlGSNp4aCDAJTllbJzASHjsoCUAnB1J5AwYYpXVtaV5vf3Nre0A7PVJAEae+tIMIuiMYnpZODjU1LN6eNFEcgwoWQCMQA==="
 	
 }
 	
