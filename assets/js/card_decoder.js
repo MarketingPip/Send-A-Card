@@ -163,6 +163,10 @@ background-position: center; /* Center the image */
 }
 }
 
+ if (window.location.pathname.match(/^card$/)){
+		 window.location.href =  `https://${window.location.hostname}/404.html`
+} 
+	
 
 if (window.location.href.indexOf("card?") != -1) {
 
