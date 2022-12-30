@@ -155,7 +155,7 @@ background-position: center; /* Center the image */
     content: "${value4}";
 }
 
-Copy code
+
 /* Make the card responsive for small screens */
 @media (max-width: 600px) {
   .card {
