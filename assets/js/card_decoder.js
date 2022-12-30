@@ -154,6 +154,52 @@ background-position: center; /* Center the image */
     /* content: "<a href='mailto:info@site.com'>info@site.com</a>"; */
     content: "${value4}";
 }
+
+Copy code
+/* Make the card responsive for small screens */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+  }
+  .card .front {
+    height: auto;
+  }
+  .card .back {
+    height: auto;
+  }
+}
+
+/* Make the card responsive for medium-sized screens */
+@media (min-width: 601px) and (max-width: 900px) {
+  .card {
+    width: 400px;
+    height: 600px;
+    margin: 60px auto;
+  }
+  .card .front {
+    height: 100%;
+  }
+  .card .back {
+    height: 100%;
+  }
+}
+
+/* Make the card responsive for large screens */
+@media (min-width: 901px) {
+  .card {
+    width: 500px;
+    height: 750px;
+    margin: 60px auto;
+  }
+  .card .front {
+    height: 100%;
+  }
+  .card .back {
+    height: 100%;
+  }
+}
 </style>
  
  <body>
