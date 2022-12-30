@@ -137,10 +137,10 @@ background-position: center; /* Center the image */
   margin-bottom: -215px;
 }
 .imgset img {
-    height: 425px;
+    height: 100%;
     box-shadow: 0px 6px 11px 7px rgb(0 0 0 / 22%);
     border-radius: 5px;
-    width: 296px;
+    width: 100%;
 }
 
 .link:after {
@@ -154,6 +154,37 @@ background-position: center; /* Center the image */
     /* content: "<a href='mailto:info@site.com'>info@site.com</a>"; */
     content: "${value4}";
 }
+
+/* Make the card responsive for small screens
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+  }
+  .card .front {
+    height: auto;
+  }
+  .card .back {
+    height: auto;
+  }
+}
+/* Make the card responsive for medium-sized screens */
+@media (min-width: 601px) and (max-width: 900px) {
+  .card {
+    width: 400px;
+    height: 600px;
+    margin: 60px auto;
+  }
+  .card .front {
+    height: 100%;
+  }
+  .card .back {
+    height: 100%;
+  }
+}
+
+
 </style>
  
  <body>
