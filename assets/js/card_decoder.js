@@ -137,10 +137,10 @@ background-position: center; /* Center the image */
   margin-bottom: -215px;
 }
 .imgset img {
-    height: 425px;
+    height: 100%;
     box-shadow: 0px 6px 11px 7px rgb(0 0 0 / 22%);
     border-radius: 5px;
-    width: 296px;
+    width: 100%;
 }
 
 .link:after {
@@ -154,6 +154,7 @@ background-position: center; /* Center the image */
     /* content: "<a href='mailto:info@site.com'>info@site.com</a>"; */
     content: "${value4}";
 }
+
 
 
 /* Make the card responsive for small screens */
@@ -189,8 +190,8 @@ background-position: center; /* Center the image */
 /* Make the card responsive for large screens */
 @media (min-width: 901px) {
   .card {
-    width: 500px;
-    height: 750px;
+    width: 102%;
+    height: 94%;
     margin: 60px auto;
   }
   .card .front {
