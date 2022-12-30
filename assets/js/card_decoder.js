@@ -157,7 +157,7 @@ background-position: center; /* Center the image */
 
 
 
-/* Make the card responsive for small screens */
+/* Make the card responsive for small screens
 @media (max-width: 600px) {
   .card {
     width: 90%;
@@ -201,6 +201,7 @@ background-position: center; /* Center the image */
     height: 100%;
   }
 }
+ */
 </style>
  
  <body>
